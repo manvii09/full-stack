@@ -1,0 +1,102 @@
+/* Define the global or root variables */
+:root{
+    --primaryColor:#F1C376;
+    --backgroundColor:#606C5D;
+    --primaryAccentColor:#F7E6C4;
+    --secondaryColor:#FFF4F4;
+    --whiteColor:white;
+    --blackColor:#222222;
+    --cursiveFont: 'Open Sans', sans-serif;
+    --navbarHeight: 3rem;
+}
+.a{
+    text-decoration: none;
+    color: var(--primaryColor);
+}
+a:hover{
+    color: var(--primaryAccentColor);
+}
+
+/* Main CSS */
+body{
+    background-color: var(--backgroundColor);
+    color: var(--primaryColor);
+    font-family: var(--primaryFont);
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.navigation{
+    background-color: var(--whiteColor);
+    height: var(--navbarHeight);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    width: 12rem;
+}
+
+.logoImage{
+    padding: 8px;
+    height: 2rem;
+    
+    /* float: left; */
+}
+
+/* .contact{
+    height: var(--navbarHeight);
+    padding: 8px 20px;
+} */
+.contactImage{
+    height: 2rem;
+    padding: 8px;
+}
+
+.menuItems{
+    flex-grow: 2;
+}
+
+.menuItem{
+    margin-left: 20px;
+}
+.titleSpan{
+    display: inline-block;
+    background-color: var(--primaryColor);
+    padding: 0.5rem;
+    margin: 5px 0px;
+}
+
+/* banner */
+.banner{
+    display: flex;
+    height: 450px;
+    background: linear-gradient(
+        45deg, 
+        var(--secondaryColor),
+        var(--primaryAccentColor);)
+        /* background-color:var(--secondaryColor); */
+        filter: drop-shadow(0px, 3px,4px , grey;)
+        /* x'y radius color */
+}
+.showCVButton{
+    background: linear-gradient(
+        white, rgb(235,235,235), grb(245,245,245)
+    );
+    padding: 10px 15px;
+    border-radius: 5px;
+    filter: drop-shadow(5px 5px 3px grey);
+
+}
+.showCVButton:hover{
+    background: linear-gradient(
+        white, rgb(215,215,215)
+    );
+}
+
+
